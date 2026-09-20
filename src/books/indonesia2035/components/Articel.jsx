@@ -15,7 +15,7 @@ const Articel = ({ darkMode, setDarkMode, fontSize, setFontSize }) => {
     // Contoh: Fetch data, log analytics, atau update UI lain di sini
   }, [fontSize]);
   return (
-    <div className="w-full">
+    <div className="w-full md:px-10">
       <section id="cover" className="w-full ">
         <Cover />
       </section>
