@@ -53,7 +53,12 @@ const Navbar = () => {
         className="hidden md:flex md:justify-between md:items-center fixed inset-x-0 top-0 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-white/30 hover:bg-white/70 px-3 rounded-2xl max-w-7xl mx-auto mt-1"
       >
         <div className="ml-5 rounded-full overflow-hidden">
-          <img src="/LI.png" alt="" className="w-10" />
+          <a
+            href="https://literasiindonesianetlify.wordpress.com/"
+            target="_blank"
+          >
+            <img src="/LI.png" alt="" className="w-10" />
+          </a>
         </div>
         <div>
           <ul className="flex space-x-6 mr-2 ">

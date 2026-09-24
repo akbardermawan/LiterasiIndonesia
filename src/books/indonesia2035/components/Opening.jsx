@@ -2,7 +2,7 @@ import React from "react";
 
 const Opening = () => {
   return (
-    <div className="mt-5 w-full p-2 md:p-5 lg:p-8 xl:p-10 border-b-2 border-t-2 border-solid border-gray-500">
+    <div className="mt-5 w-full py-2 px-3 md:p-5 lg:p-8 xl:py-10 xl:px-20 border-b-2 border-t-2 border-solid border-gray-500">
       <h1 className="mt-15 mb-5 mx-auto text-center text-xl font-semibold">
         Pembukaan
       </h1>

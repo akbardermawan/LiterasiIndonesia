@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       {/* ================= HERO ================= */}
-      <section className="relative isolate overflow-hidden bg-slate-950">
+      <section className="relative isolate overflow-hidden bg-white">
         {/* Background decoration */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl" />
@@ -23,36 +23,29 @@ const Home = () => {
         />
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-32">
           <div className="max-w-4xl">
-            {/* Badge */}
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-indigo-400/20 bg-indigo-400/10 px-4 py-2 text-sm font-medium text-indigo-300 backdrop-blur-sm">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-indigo-500/20">
-                📚
-              </span>
-              Temukan buku favoritmu
-            </div>
             {/* Brand */}
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-lg font-black text-white shadow-lg shadow-indigo-500/20">
-                LI
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl shadow-lg shadow-indigo-500/20 overflow-hidden">
+                <img src="/LI.png" alt="" />
               </div>
               <div>
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-indigo-400">
                   Perpustakaan Digital
                 </p>
-                <h1 className="text-xl font-bold text-white sm:text-2xl">
+                <h1 className="text-xl font-bold text-gray-500 sm:text-2xl">
                   Literasi Indonesia
                 </h1>
               </div>
             </div>
             {/* Heading */}
-            <h2 className="max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h2 className="max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-gray-500 sm:text-5xl lg:text-6xl">
               Buka halaman baru,
               <span className="block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 temukan dunia baru.
               </span>
             </h2>
             {/* Quote */}
-            <p className="mt-6 max-w-2xl text-xl leading-relaxed text-slate-300 sm:text-2xl">
+            <p className="mt-6 max-w-2xl text-xl leading-relaxed text-slate-400 sm:text-2xl">
               Buku adalah
               <span className="font-semibold text-indigo-400">
                 tuangan pikiran
@@ -72,22 +65,24 @@ const Home = () => {
                   →
                 </span>
               </button>
-              <button className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700 bg-white/[0.03] px-6 py-3.5 font-semibold text-slate-200 backdrop-blur-sm transition-all duration-300 hover:border-slate-600 hover:bg-white/[0.08]">
-                Lihat Koleksi <span>↗</span>
-              </button>
+              <a href="#koleksibuku">
+                <button className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700 bg-white/[0.03] px-6 py-3.5 font-semibold text-slate-400 backdrop-blur-sm transition-all duration-300 hover:border-slate-600 hover:bg-white/[0.08]">
+                  Lihat Koleksi <span>↗</span>
+                </button>
+              </a>
             </div>
             {/* Small stats */}
             <div className="mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-white/10 pt-7">
               <div>
-                <p className="text-2xl font-bold text-white">1K+</p>
+                <p className="text-2xl font-bold text-gray-500">1K+</p>
                 <p className="text-sm text-slate-500">Koleksi Buku</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">500+</p>
+                <p className="text-2xl font-bold text-gray-500">500+</p>
                 <p className="text-sm text-slate-500">Penulis</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">24/7</p>
+                <p className="text-2xl font-bold text-gray-500">24/7</p>
                 <p className="text-sm text-slate-500">Akses Digital</p>
               </div>
             </div>
@@ -129,17 +124,18 @@ const Home = () => {
                 </span>
                 <h3 className="mt-3 text-xl font-bold">{book.title}</h3>
                 <p className="mt-1 text-sm text-slate-500"> {book.author} </p>
-
-                <button className="mt-5 w-fit text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                  Lihat detail →
-                </button>
+                <a href={book.url}>
+                  <button className="mt-5 w-fit text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                    Lihat Buku
+                  </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
       </section>
       {/* ================= LIST BOOK ================= */}
-      <section className="bg-white">
+      <section className="bg-white" id="koleksibuku">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-wider text-indigo-500">
