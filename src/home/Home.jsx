@@ -108,6 +108,28 @@ const Home = () => {
           </button>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
+          <div className="group flex overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <img
+              src="./images/cpns.jpg"
+              alt="cpns book"
+              className="h-56 w-40 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div className="flex flex-1 flex-col justify-center p-6">
+              <span className="w-fit rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-600">
+                Education
+              </span>
+              <h3 className="mt-3 text-xl font-bold">Soal Tes CPNS Lengkap</h3>
+              <p className="mt-1 text-sm text-slate-500">
+                {" "}
+                Akbar Dermawan Mahbubillah
+              </p>
+              <a href="https://akbarcpns.netlify.app/" target="_blank">
+                <button className="mt-5 w-fit text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                  Lihat Buku
+                </button>
+              </a>
+            </div>
+          </div>
           {topBooks.slice(0, 3).map((book) => (
             <div
               key={book.id}

@@ -10,7 +10,7 @@ const Jalanbercabang = () => {
   return (
     <div className="flex h-screen">
       {/* Navigation Sidebar */}
-      <div className="hidden md:flex md:w-[20%] lg:w-[20%] bg-white dark:bg-gray-800 overflow-y-auto">
+      <div className="hidden md:flex md:w-[20%] lg:w-[20%] bg-white overflow-y-auto">
         <div className="sticky top-0 h-screen w-full">
           <Navigation />
         </div>
@@ -27,7 +27,7 @@ const Jalanbercabang = () => {
       </div>
 
       {/* Settings Sidebar */}
-      <div className="hidden lg:flex lg:w-[20%] bg-white dark:bg-gray-800 overflow-y-auto">
+      <div className="hidden lg:flex lg:w-[20%] bg-white overflow-y-auto">
         <div className="sticky top-0 h-screen w-full">
           <Author />
           {/* <Settings

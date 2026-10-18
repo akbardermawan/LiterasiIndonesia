@@ -16,6 +16,14 @@ const books = [
     image: "/images/jalanbercabang.jpg",
     url: "/jalanbercabang",
   },
+  {
+    id: 3,
+    title: "Legends of the Verdant Kingdom",
+    author: "Akbar Dermawan Mahbubillah",
+    category: "Fantasi",
+    image: "/images/legendsverdant.jpg",
+    url: "/legendsverdant",
+  },
 ];
 const topBooks = [
   {
@@ -50,4 +58,10 @@ const NAVBAR = [
   },
 ];
 
-export { books, topBooks, NAVBAR };
+const HeroImgAbout = [
+  { id: 1, name: "1", img: "/books.JPG" },
+  { id: 2, name: "2", img: "/library.jpg" },
+  { id: 3, name: "3", img: "/LI.png" },
+];
+
+export { books, topBooks, NAVBAR, HeroImgAbout };
