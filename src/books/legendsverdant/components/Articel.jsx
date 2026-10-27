@@ -4,6 +4,12 @@ import Opening from "./Opening";
 import Bab1 from "./Bab1";
 import Bab2 from "./Bab2";
 import Bab3 from "./Bab3";
+import Bab4 from "./Bab4";
+import Bab5 from "./Bab5";
+import Bab6 from "./Bab6";
+import Bab7 from "./Bab7";
+import Bab8 from "./Bab8";
+import Bab9 from "./Bab9";
 
 const Articel = ({ darkMode, setDarkMode, fontSize, setFontSize }) => {
   useEffect(() => {
@@ -28,6 +34,24 @@ const Articel = ({ darkMode, setDarkMode, fontSize, setFontSize }) => {
       </section>
       <section id="3" className="w-full ">
         <Bab3 />
+      </section>
+      <section id="4" className="w-full ">
+        <Bab4 />
+      </section>
+      <section id="5" className="w-full ">
+        <Bab5 />
+      </section>
+      <section id="6" className="w-full ">
+        <Bab6 />
+      </section>
+      <section id="7" className="w-full ">
+        <Bab7 />
+      </section>
+      <section id="8" className="w-full ">
+        <Bab8 />
+      </section>
+      <section id="9" className="w-full ">
+        <Bab9 />
       </section>
     </div>
   );

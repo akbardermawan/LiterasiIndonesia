@@ -15,16 +15,13 @@ const Navigation = () => {
           <a href="#1">Hanoman</a>
         </li>
         <li>
-          <a href="#2">BAB II</a>
+          <a href="#2">Lodaya</a>
         </li>
         <li>
-          <a href="#3">BAB III</a>
+          <a href="#3">Antari Kusuma</a>
         </li>
         <li>
-          <a href="#4">BAB IV</a>
-        </li>
-        <li>
-          <a href="#conclusion">Kesimpulan</a>
+          <a href="#4">Semar</a>
         </li>
       </ul>
     </div>
